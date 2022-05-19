@@ -25,7 +25,7 @@ public class Books {
     private String isbn;
 
     @Column(name = "publication_date")
-    private Date publicationDate;
+    private String publicationDate;
 
     @Column(name = "genre")
     private String genre;
@@ -33,7 +33,7 @@ public class Books {
     public Books() {
     }
 
-    public Books(String bookName, String authorName, String publisher, String isbn, Date publicationDate, String genre) {
+    public Books(String bookName, String authorName, String publisher, String isbn, String publicationDate, String genre) {
         this.bookName = bookName;
         this.authorName = authorName;
         this.publisher = publisher;
@@ -82,11 +82,11 @@ public class Books {
         this.isbn = isbn;
     }
 
-    public Date getPublicationDate() {
+    public String getPublicationDate() {
         return publicationDate;
     }
 
-    public void setPublicationDate(Date publicationDate) {
+    public void setPublicationDate(String publicationDate) {
         this.publicationDate = publicationDate;
     }
 
